@@ -1,0 +1,396 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Arijeet Karmakar and Bootstrap contributors">
+    <meta name="generator" content="">
+    <title>Madhumala Jewellers</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Animate core CSS -->
+<link href="css/animate.css" rel="stylesheet">
+
+     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      * {box-sizing: border-box;}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.navbar-brand {
+  margin: 0px;
+  padding: 0;
+  margin-right: 20px;
+}
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+/*
+.navbar-collapse marquee {
+  width: 40%;
+  text-align: right;
+}
+*/
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #E74C3C;
+  border-radius: 5px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Style inputs */
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.nav-color {
+  background-color: #A93226; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #A93226 , #E67E22); /* Standard syntax (must be last) */
+}
+
+.padding-10 {
+  padding: 10px;
+  padding-top: 25px;
+}
+
+footer {
+  background: black;
+  min-height: 80px;
+  color: white;
+}
+footer p img {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-color">
+    <a class="navbar-brand animated bounceInLeft" href="index.html"><img src="images/mmj_logo.jpg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse animated fadeInDown" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fname">Contact</a>
+        </li>
+      </ul>
+     <marquee>Best quality is our Guarantee. To know more contact us.</marquee>
+    </div>
+  </nav>
+</header>
+  <img src="images/mj_background_logo.jpg" style="width: 100%; height: 650px; margin-top: 80px;"> 
+<main role="main">
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+  
+    <!-- START THE FEATURETTES -->
+
+  <br>
+
+    <div class="row featurette">
+      <div class="col-md-4 text-center padding-10">
+        <h2 class="featurette-heading">Best Quality</h2>
+        <p class="lead padding-10">Modern designs with updated collections. Attractive and beautiful designs. No compromise in quiality of the product.</p>
+      </div>
+      <div class="col-md-8">
+        <img src="images/mj_06.jpg" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-4 order-md-2 text-center padding-10">
+        <h2 class="featurette-heading">Attractive Design</h2>
+        <p class="lead padding-10">Come check out our attractive designs and fall in love with our latest collections. Visit our store to know more.</p>
+      </div>
+      <div class="col-md-8 order-md-1">
+       <img src="images/mj_10.jpg" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-4 text-center padding-10">
+        <h2 class="featurette-heading ">Finest Makers</h2>
+        <p class="lead padding-10">Every product is handcrafted by our fineds makers with more than 30 years of experience. The quality design we provide is one of the finest around.</p>
+      </div>
+      <div class="col-md-8">
+        <img src="images/mj_11.jpg" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/mj_09.jpg" style="width:100%; height: 98%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/mj_08.jpg" style="width:100%; height: 98%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/mj_03.jpg" style="width:100%;height: 98%;">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+     <!--Slde Show script -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  
+  <!-- About the founder-->
+<div class="container padding-10" style="text-align: center;">
+  <h2 class="pb-4"><strong>Founder</strong></h2>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="images/mj_founder.jpg" style="width: 100%; height: 350px;">
+    </div>
+    <div class="col-md-6">
+      <h3 style="font-family: Futura Koyu;">Mr. Gobinda Karmakar</h3>
+      <p style="margin-top: 80px;">with his true potential and hard work has built Madhumala Jewellers. Since 1983 </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Us form-->
+  <div class="container-fluid">
+    <div style="text-align:center; margin-top:25px;">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/mj_14.jpg" style="width:100%; margin: 100px 10px;">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="required">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="bhutan">Bhutan</option>
+          </select>
+          <label for="email">Email Id</label>
+          <input type="email" id="email" name="email" placeholder="Type your email.." required="required">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:90px;"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="container-fluid">
+    <p class="float-right m-0"><a href="index.html"><img src="images/up_arrow.png"></a></p>
+    <p class="text-center m-0 p-5">&copy; 2019 Designed and Developed by <a target="_blank" href="https://arijitk65.github.io/portfolio/">Arijeet Karmakar</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    </body>
+</html>
